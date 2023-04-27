@@ -1,6 +1,8 @@
+import styled from "../styles/Layout.module.scss";
+
 const Layout = ({ children }) => (
   <>
-    <div className="container">
+    <div className={styled.container}>
       {children}
     </div>
   </>

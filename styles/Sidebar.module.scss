@@ -1,0 +1,18 @@
+.sidebar {
+  width: calc(100vw - 80%);
+  height: 100vh;
+  padding: 50px;
+  border-right: 1px solid #cccccc;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile {
+
+  h1 {
+    font-size: 4rem;
+  }
+}

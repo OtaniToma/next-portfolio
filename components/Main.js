@@ -24,9 +24,9 @@ export default function Main() {
 
         <h2>Projects</h2>
         <ul>
-          <li>BudgeTicket - Flight Tickets Search App</li>
+          <li>BudgeTicket - Flight Search App</li>
           <li>KUMONOS Corporation - Corporate Website</li>
-          <li>Portfolio 2020 (Gastby.js)</li>
+          <li>Portfolio 2020 (Gatsby.js)</li>
         </ul>
 
         <h2>Experiences</h2>

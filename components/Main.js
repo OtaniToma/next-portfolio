@@ -6,7 +6,7 @@ export default function Main() {
       <main className={styles.main}>
         <h2>About Me</h2>
         <p>
-          Front-end Web Developer position with professional experience at a design agency in Vancouver, Canada.
+          Front-end web developer with professional experience at a design agency in Vancouver, Canada.
         </p>
 
         <h2>What I can</h2>

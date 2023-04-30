@@ -11,7 +11,7 @@ export default function Sidebar() {
               border-radius: 50%;
             }
           `}</style>
-          <div className="profile">
+          <div className={styles.profile}>
             <h1>Toma Otani</h1>
             <h4>Web Developer</h4>
           </div>

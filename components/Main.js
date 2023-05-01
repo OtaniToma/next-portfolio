@@ -1,4 +1,4 @@
-import styles from "../styles/Top.module.scss";
+import styles from "../styles/Main.module.scss";
 
 export default function Main() {
   return (

@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Sidebar from "../components/Sidebar";
-import Top from "../components/Top";
+import Main from "../components/Main";
 import 'normalize.css/normalize.css';
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Layout>
         <Sidebar />
-        <Top />
+        <Main />
       </Layout>
     </>
   )

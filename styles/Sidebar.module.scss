@@ -7,10 +7,12 @@
   top: 0;
   position: sticky;
   overflow-y: auto;
+  box-sizing: content-box;
+  z-index: 1;
 
   @media screen and (max-width: 768px) {
     width: 100vw;
-    height: 140px;
+    height: 100px;
     padding: 1.2rem;
     border-right: none;
     border-bottom: 1px solid #cccccc;

@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Sidebar from "../../components/Sidebar";
 import Main from "../../components/Main";
+import Posts from "../../components/Posts";
 import { getAllPosts } from "../../lib/api";
 
 export default function Blog({ posts }) {
@@ -9,7 +10,9 @@ export default function Blog({ posts }) {
   return (
     <Layout>
       <Sidebar />
-      <Main>Blog</Main>
+      <Main>
+        <Posts posts={posts} />
+      </Main>
     </Layout>
   );
 }

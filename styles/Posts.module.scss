@@ -1,0 +1,37 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-jump);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg);
+
+  article {
+    border-bottom: 1px solid #eeeeee;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+      background-color: var(--gray-10);
+      transition: 0.2s all ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.post {
+
+  h2 {
+    margin-top: 0.5em;
+    padding-left: 1rem;
+    font-size: var(--small-heading3);
+    font-weight: 400;
+  }
+
+  figure {
+    position: relative;
+    aspect-ratio: 16/9;
+  }
+}

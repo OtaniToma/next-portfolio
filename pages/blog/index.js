@@ -5,8 +5,6 @@ import Posts from "../../components/Posts";
 import { getAllPosts } from "../../lib/api";
 
 export default function Blog({ posts }) {
-  console.log(posts);
-
   return (
     <Layout>
       <Sidebar />

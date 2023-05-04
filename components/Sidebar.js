@@ -16,7 +16,7 @@ export default function Sidebar() {
           `}</style>
           <div className={styles.profile}>
             <h1>Toma Otani</h1>
-            <h4>Web Developer</h4>
+            Web Developer
           </div>
         </div>
       </aside>

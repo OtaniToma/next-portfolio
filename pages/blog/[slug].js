@@ -7,6 +7,7 @@ import { getPostBySlug, getAllSlugs } from "../../lib/api";
 import { extractText } from "../../lib/extract-text";
 import { prevNextPost } from "../../lib/prev-next-post";
 import ConvertBody from "../../components/ConvertBody";
+import ConvertDate from "../../components/ConvertDate";
 import Image from "next/image";
 import { getPlaiceholder } from "plaiceholder";
 import { eyecatchLocal } from "../../lib/constants";
@@ -26,6 +27,8 @@ export default function Post({
       <Sidebar />
       <Main>
         <PostBody>
+          <h1>{title}</h1>
+          <ConvertDate dateISO={publish} />
           <ConvertBody contentHTML={content} />
         </PostBody>
         <Pagination

@@ -1,0 +1,62 @@
+.stack {
+  h2 {
+    color: var(black);
+    background-color: var(--gray-10);
+    padding: 0.5em;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  a {
+    word-wrap: break-word;
+  }
+
+  ul {
+    list-style: revert;
+    padding-left: revert;
+  }
+
+  pre {
+    background-color: #1d2020;
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    white-space: pre-wrap;
+  }
+
+  blockquote {
+    background-color: #fafbfc;
+    border: 1px solid #ddd;
+    padding: 1.5em 1.75em;
+    position: relative;
+
+    &::before {
+      color: #c8c8c8;
+      content: "“";
+      font-family: serif;
+      font-size: 300%;
+      left: 10px;
+      line-height: 1.1;
+      position: absolute;
+      top: 0;
+    }
+
+    &::after {
+      color: #c8c8c8;
+      content: "“";
+      font-family: serif;
+      font-size: 300%;
+      right: 10px;
+      bottom: 0;
+      content: "”";
+      line-height: 0;
+      position: absolute;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

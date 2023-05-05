@@ -23,7 +23,7 @@
 
 .headerLine {
   width: 100%;
-  border-top: 1px solid #ffad00;
+  border-top: 1px solid var(--accent);
   margin-bottom: 1rem;
 
   @media screen and (max-width: 768px) {

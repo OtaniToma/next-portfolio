@@ -43,8 +43,10 @@ export default function Top() {
         <ul className={styles.skills}>
           <li>React.js</li>
           <li>Next.js</li>
-          <li>Material-UI</li>
           <li>Gatsby.js</li>
+          <li>GSAP</li>
+          <li>Material-UI</li>
+          <li>Bootstrap</li>
         </ul>
         <h3>Others</h3>
         <ul className={styles.skills}>

@@ -9,8 +9,10 @@ export default function Top() {
     <>
       <Textblock heading={"About Me"}>
         <p>
-          Front-end web developer with professional experience at a design
-          agency in Vancouver, Canada.
+          Hello✋ I am Toma Otani (Thomas), a front-end web developer with work
+          experience at a design agency in Vancouver, Canada.
+          <br />
+          Currently residing in Tokyo to seek new opportunities.
         </p>
         <Link href={"https://github.com/OtaniToma/"}>
           <a className={styles.iconText}>
@@ -56,9 +58,26 @@ export default function Top() {
 
       <Textblock heading={"Works"}>
         <ul>
-          <li>BudgeTicket - Flight Search App</li>
-          <li>KUMONOS Corporation - Corporate Website</li>
-          <li>Portfolio 2020 (Gatsby.js)</li>
+          <li>
+            <Link href="/blog">
+              <a>BudgeTicket - Flight Ticket Search App</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/kumonos"}>
+              <a>KUMONOS Corporation - Corporate Website</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog">
+              <a>Personal Blog - Next.js x microCMS blog</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/portfolio2020"}>
+              <a>Portfolio 2020 - Gatsby.js website</a>
+            </Link>
+          </li>
         </ul>
       </Textblock>
 
@@ -66,9 +85,15 @@ export default function Top() {
         <ul>
           <li>Web Developer, New World Enterprises (Sep. 2020 - present)</li>
           <li>
+            Web Developer (Part-time), Kumonos Corporation (Mar. 2020 - Mar.
+            2023)
+          </li>
+          <li>
             Junior Web Developer, Signals Design Group (Sep. 2019 - Mar. 2020)
           </li>
-          <li>Website Manager, Kumonos Corporation (Apr. 2015 - Aug. 2018)</li>
+          <li>
+            Website Manager, Kansai Construction Survey (Apr. 2015 - Aug. 2018)
+          </li>
         </ul>
       </Textblock>
 

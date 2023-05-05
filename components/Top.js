@@ -1,5 +1,8 @@
 import styles from "../styles/Main.module.scss";
 import Textblock from "./Textblock";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Top() {
   return (
@@ -9,6 +12,21 @@ export default function Top() {
           Front-end web developer with professional experience at a design
           agency in Vancouver, Canada.
         </p>
+        <Link href={"https://github.com/OtaniToma/"}>
+          <a className={styles.iconText}>
+            <FontAwesomeIcon icon={faGithub} color="var(--gray-75)" size="xl" />
+          </a>
+        </Link>
+        {"　"}
+        <Link href={"https://www.linkedin.com/in/otani-toma/"}>
+          <a className={styles.iconText}>
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="var(--gray-75)"
+              size="xl"
+            />
+          </a>
+        </Link>
       </Textblock>
 
       <Textblock heading={"What I Can"}>

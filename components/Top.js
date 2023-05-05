@@ -59,7 +59,7 @@ export default function Top() {
       <Textblock heading={"Works"}>
         <ul>
           <li>
-            <Link href="/blog">
+            <Link href="/budgeticket">
               <a>BudgeTicket - Flight Ticket Search App</a>
             </Link>
           </li>

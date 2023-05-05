@@ -31,7 +31,7 @@ li {
   --gray-25: #aaaaaa;
   --gray-75: #444444;
   --black: #222222;
-  --accent: #1e73be;
+  --accent: #ffad00;
 
   --body: clamp(1rem, 0.95rem + 2vw, 1.125rem);
   --display: clamp(4.5rem, 1.83rem + 11.34vw, 10rem);

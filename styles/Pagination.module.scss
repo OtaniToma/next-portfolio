@@ -3,11 +3,15 @@
   gap: 1em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+
 }
 
 .prev, .next {
-  width: 50%;
+  max-width: 50%;
+  border-bottom: 1px solid #cccccc;
+  padding: 0.5rem;
+
 }
 
 .next {

@@ -1,0 +1,29 @@
+.flexContainer {
+  margin: var(--space-md) 0;
+  gap: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev, .next {
+  width: 50%;
+}
+
+.next {
+  margin-left: auto;
+}
+
+.iconText {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-jump);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}

@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Sidebar from "../../components/Sidebar";
 import Main from "../../components/Main";
+import Pagination from "../../components/pagination";
 import { getPostBySlug, getAllSlugs } from "../../lib/api";
 import { extractText } from "../../lib/extract-text";
 import { prevNextPost } from "../../lib/prev-next-post";
@@ -24,6 +25,12 @@ export default function Post({
       <Sidebar />
       <Main>
         <ConvertBody contentHTML={content} />
+        <Pagination
+          prevText={prevPost.title}
+          prevUrl={`/blog/${prevPost.slug}`}
+          nextText={nextPost.title}
+          nextUrl={`/blog/${nextPost.slug}`}
+        />
       </Main>
     </Layout>
   );

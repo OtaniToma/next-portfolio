@@ -2,7 +2,7 @@ import Layout from "../../components/layout";
 import Sidebar from "../../components/Sidebar";
 import Main from "../../components/Main";
 import PostBody from "../../components/PostBody";
-import Pagination from "../../components/pagination";
+import Pagination from "../../components/Pagination";
 import { getPostBySlug, getAllSlugs } from "../../lib/api";
 import { extractText } from "../../lib/extract-text";
 import { prevNextPost } from "../../lib/prev-next-post";

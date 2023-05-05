@@ -1,4 +1,4 @@
-import styles from "../styles/Main.module.scss";
+import styles from "../styles/Top.module.scss";
 import Textblock from "./Textblock";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,14 +30,25 @@ export default function Top() {
       </Textblock>
 
       <Textblock heading={"What I Can"}>
-        <ul>
+        <h3>Languages</h3>
+        <ul className={styles.skills}>
           <li>HTML5</li>
           <li>CSS3</li>
+          <li>SCSS</li>
           <li>JavaScript</li>
+        </ul>
+        <h3>Frameworks / Libraries</h3>
+        <ul className={styles.skills}>
           <li>React.js</li>
           <li>Next.js</li>
-          <li>WordPress</li>
+          <li>Material-UI</li>
+          <li>Gatsby.js</li>
+        </ul>
+        <h3>Others</h3>
+        <ul className={styles.skills}>
           <li>Git</li>
+          <li>Firebase</li>
+          <li>EJS</li>
           <li>Photoshop</li>
           <li>Illustrator</li>
         </ul>

@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Sidebar from "../components/Sidebar";
 import Main from "../components/Main";
 import Textblock from "../components/Textblock";
+import Button from "../components/Button";
 import Image from "next/image";
 import styles from "../styles/Works.module.scss";
 
@@ -23,13 +24,22 @@ export default function BudgeTicket() {
               />
             </figure>
             <p>
-              This app can find cheap flights with destination information. The
-              purpose of creating this app is to understand the basics of
+              This app can search flight tickets with destination information.
+              The purpose of creating this app is to understand the basics of
               JavaScript, handling API request, and React.js app development.
             </p>
+            <Button
+              value={"View Live"}
+              link={"https://budgeticket.firebaseapp.com/"}
+            />
+            <Button
+              value={"GitHub"}
+              link={"https://github.com/OtaniToma/budgeticket"}
+            />
           </Textblock>
 
           <Textblock heading={"Features"}>
+            <h3>Search Bar</h3>
             <figure className={styles.screenshot}>
               <Image
                 src={"/budgeticket-1.gif"}
@@ -44,6 +54,7 @@ export default function BudgeTicket() {
               name. Also, datepicker components have the validation to check the
               departure date is before the return date.
             </p>
+            <h3>Search Result</h3>
             <figure className={styles.screenshot}>
               <Image
                 src={"/budgeticket-2.gif"}
@@ -54,8 +65,14 @@ export default function BudgeTicket() {
               />
             </figure>
             <p>
-              The data from Skyscanner API is stored in Redux store. Users can
-              filter or sort results by departure date, price, and airlines.
+              The result from Skyscanner API is stored in Redux store. Users can
+              filter or sort results by departure date, price and airlines.
+            </p>
+            <p>A map and images of the destination are shown on the sidebar.</p>
+            <h3>Authentication</h3>
+            <p>
+              Users can create an account with using Google to save liked
+              ticket.
             </p>
           </Textblock>
           <Textblock heading={"Technologies"}>
@@ -66,7 +83,7 @@ export default function BudgeTicket() {
                   <li>React.js with React Hooks</li>
                   <li>Redux.js (Re-ducks design pattern) </li>
                   <li>Atomic Design</li>
-                  <li>Style with UI Framework (Material-UI)</li>
+                  <li>UI Framework (Material-UI)</li>
                 </ul>
               </dd>
             </dl>

@@ -99,7 +99,6 @@ export default function Top() {
               <span>Corporate Website</span>
               <ul className={styles.skills}>
                 <li>WordPress</li>
-                <li>GSAP</li>
               </ul>
             </div>
           </div>
@@ -120,7 +119,6 @@ export default function Top() {
               <span>Gatsby.js website</span>
               <ul className={styles.skills}>
                 <li>Gatsby.js</li>
-                <li>GSAP</li>
                 <li>Netlify</li>
               </ul>
             </div>

@@ -1,4 +1,5 @@
 import styles from "../styles/Icons.module.scss";
+import Image from "next/image";
 
 const Icons = ({ heading, description, icons }) => {
   const allIcons = {
@@ -37,7 +38,12 @@ const Icons = ({ heading, description, icons }) => {
         iconsToShow.map((icon) => {
           return (
             <li key={allIcons[icon].id}>
-              <img src={allIcons[icon].path} alt={icon.id} />
+              <Image
+                src={allIcons[icon].path}
+                alt={icon.id}
+                width={50}
+                height={50}
+              />
             </li>
           );
         })}

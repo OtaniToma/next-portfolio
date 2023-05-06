@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar";
 import Main from "../components/Main";
 import Textblock from "../components/Textblock";
 import Button from "../components/Button";
+import Icons from "../components/Icons";
 import Image from "next/image";
 import styles from "../styles/Works.module.scss";
 
@@ -71,11 +72,17 @@ export default function BudgeTicket() {
             <p>A map and images of the destination are shown on the sidebar.</p>
             <h3>Authentication</h3>
             <p>
-              Users can create an account with using Google to save liked
+              Users can create an own account to save, see, and delete liked
               ticket.
             </p>
           </Textblock>
           <Textblock heading={"Technologies"}>
+            <Icons
+              heading={""}
+              icons={["javascript", "react", "redux", "firebase", "materialui"]}
+              description={[]}
+            />
+
             <dl className={styles.techs}>
               <dt>Front End</dt>
               <dd>

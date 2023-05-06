@@ -1,6 +1,7 @@
 import styles from "../styles/Top.module.scss";
 import Textblock from "./Textblock";
 import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -59,28 +60,72 @@ export default function Top() {
       </Textblock>
 
       <Textblock heading={"Works"}>
-        <ul>
-          <li>
-            <Link href="/budgeticket">
-              <a>BudgeTicket - Flight Ticket Search App</a>
-            </Link>
-          </li>
-          <li>
-            <Link href={"/kumonos"}>
-              <a>KUMONOS Corporation - Corporate Website</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog">
-              <a>Personal Blog - Next.js x microCMS blog</a>
-            </Link>
-          </li>
-          <li>
-            <Link href={"/portfolio2020"}>
-              <a>Portfolio 2020 - Gatsby.js website</a>
-            </Link>
-          </li>
-        </ul>
+        <Link href="/budgeticket">
+          <div className={styles.worksItem}>
+            <figure>
+              <Image
+                src={"/budgeticket.png"}
+                alt=""
+                layout="intrinsic"
+                width={200}
+                height={125}
+              />
+            </figure>
+            <div className={styles.worksDesc}>
+              <h3>BudgeTicket</h3>
+              <span>Flight tickets search app</span>
+              <ul className={styles.skills}>
+                <li>React.js</li>
+                <li>Redux</li>
+                <li>Firebase</li>
+                <li>Material-UI</li>
+              </ul>
+            </div>
+          </div>
+        </Link>
+        <Link href="/kumonos">
+          <div className={styles.worksItem}>
+            <figure>
+              <Image
+                src={"/kumonos.png"}
+                alt=""
+                layout="intrinsic"
+                width={200}
+                height={125}
+              />
+            </figure>
+            <div className={styles.worksDesc}>
+              <h3>KUMONOS</h3>
+              <span>Corporate Website</span>
+              <ul className={styles.skills}>
+                <li>WordPress</li>
+                <li>GSAP</li>
+              </ul>
+            </div>
+          </div>
+        </Link>
+        <Link href="/portfolio2020">
+          <div className={styles.worksItem}>
+            <figure>
+              <Image
+                src={"/portfolio.png"}
+                alt=""
+                layout="intrinsic"
+                width={200}
+                height={125}
+              />
+            </figure>
+            <div className={styles.worksDesc}>
+              <h3>Portfolio 2020</h3>
+              <span>Gatsby.js website</span>
+              <ul className={styles.skills}>
+                <li>Gatsby.js</li>
+                <li>GSAP</li>
+                <li>Netlify</li>
+              </ul>
+            </div>
+          </div>
+        </Link>
       </Textblock>
 
       <Textblock heading={"Experiences"}>

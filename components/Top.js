@@ -53,7 +53,7 @@ export default function Top() {
         <ul className={styles.skills}>
           <li>Git</li>
           <li>Firebase</li>
-          <li>EJS</li>
+          <li>WordPress</li>
           <li>Photoshop</li>
           <li>Illustrator</li>
         </ul>

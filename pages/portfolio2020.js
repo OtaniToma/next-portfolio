@@ -45,7 +45,7 @@ export default function Portfolio2020() {
               />
             </figure>
             <p>
-              This website achieved 100 point at performance on Google's
+              This website achieved 100 point at performance on Google&apos;s
               Lighthouse Report.
             </p>
           </Textblock>

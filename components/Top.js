@@ -129,8 +129,8 @@ export default function Top({ posts }) {
       <Textblock heading={"Blog"}>
         <ul>
           {posts.map(({ title, slug }) => (
-            <li>
-              <article key={slug} className={styles.blogLink}>
+            <li key={slug}>
+              <article className={styles.blogLink}>
                 <Link href={`/blog/${slug}`}>{title}</Link>
               </article>
             </li>

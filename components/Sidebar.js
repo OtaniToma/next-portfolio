@@ -20,8 +20,10 @@ export default function Sidebar() {
             }
           `}</style>
           <div className={styles.profile}>
-            <h1>Toma Otani</h1>
-            Front-end Web Developer
+            <h1>
+              <Link href="/">Toma Otani</Link>
+            </h1>
+            <Link href="/">Front-end Web Developer</Link>
           </div>
         </div>
       </aside>

@@ -37,6 +37,7 @@ export default function Top({ posts }) {
         <ul className={styles.skills}>
           <li>HTML5</li>
           <li>CSS3</li>
+          <li>SCSS</li>
           <li>JavaScript</li>
         </ul>
         <h3>Frameworks / Libraries</h3>

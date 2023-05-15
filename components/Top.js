@@ -5,12 +5,12 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-export default function Top() {
+export default function Top({ posts }) {
   return (
     <>
       <Textblock heading={"About Me"}>
         <p>
-          Hello✋ I am Toma Otani (Thomas), a front-end web developer with work
+          Hello!✋ I am Toma Otani (Thomas), a front-end web developer with work
           experience at a design agency in Vancouver, Canada.
           <br />
           Currently residing in Tokyo to seek new opportunities.
@@ -37,7 +37,6 @@ export default function Top() {
         <ul className={styles.skills}>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>SCSS</li>
           <li>JavaScript</li>
         </ul>
         <h3>Frameworks / Libraries</h3>
@@ -124,6 +123,18 @@ export default function Top() {
             </div>
           </div>
         </Link>
+      </Textblock>
+
+      <Textblock heading={"Blog"}>
+        <ul>
+          {posts.map(({ title, slug }) => (
+            <li>
+              <article key={slug} className={styles.blogLink}>
+                <Link href={`/blog/${slug}`}>{title}</Link>
+              </article>
+            </li>
+          ))}
+        </ul>
       </Textblock>
 
       <Textblock heading={"Experiences"}>

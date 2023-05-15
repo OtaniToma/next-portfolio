@@ -1,4 +1,11 @@
 .stack {
+  width: 75%;
+  max-width: 1024px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
   h2 {
     color: var(black);
     background-color: var(--gray-10);
@@ -20,6 +27,7 @@
     padding: 1rem;
     border-radius: 8px;
     white-space: pre-wrap;
+    overflow-wrap: anywhere;
   }
 
   blockquote {

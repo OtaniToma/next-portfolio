@@ -10,9 +10,10 @@ export default function Top({ posts }) {
     <>
       <Textblock heading={"About Me"}>
         <p>
-          Hello!✋ I'm Toma Otani (Thomas), a front-end web developer with
-          previous work experience at a design agency in Vancouver, Canada. I'm
-          currently based in Tokyo, actively looking for new opportunities.
+          Hello!✋ I am Toma Otani (Thomas), a front-end web developer with
+          previous work experience at a design agency in Vancouver, Canada.
+          <br />
+          Currently based in Tokyo, actively looking for new opportunities.
         </p>
         <Link href={"https://github.com/OtaniToma/"}>
           <a className={styles.iconText}>

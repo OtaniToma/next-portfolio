@@ -10,10 +10,9 @@ export default function Top({ posts }) {
     <>
       <Textblock heading={"About Me"}>
         <p>
-          Hello!✋ I am Toma Otani (Thomas), a front-end web developer with work
-          experience at a design agency in Vancouver, Canada.
-          <br />
-          Currently residing in Tokyo to seek new opportunities.
+          Hello!✋ I'm Toma Otani (Thomas), a front-end web developer with
+          previous work experience at a design agency in Vancouver, Canada. I'm
+          currently based in Tokyo, actively looking for new opportunities.
         </p>
         <Link href={"https://github.com/OtaniToma/"}>
           <a className={styles.iconText}>
@@ -127,6 +126,7 @@ export default function Top({ posts }) {
       </Textblock>
 
       <Textblock heading={"Blog"}>
+        <h3>Next.js x microCMS Blog</h3>
         <ul>
           {posts.map(({ title, slug }) => (
             <li key={slug}>

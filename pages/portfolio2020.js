@@ -29,6 +29,10 @@ export default function Portfolio2020() {
               scratch to understand Gatsby.js.
             </p>
             <Button
+              value={"View Live"}
+              link={"https://otanitoma.netlify.app/"}
+            />
+            <Button
               value={"GitHub"}
               link={"https://github.com/OtaniToma/portfolio-gatsby"}
             />
